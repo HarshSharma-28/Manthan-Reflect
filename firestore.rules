@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Manthan Server-Authoritative Policy:
+    // 1. Clients can only read their own profile & entries if authenticated.
+    // 2. All client writes are strictly denied ('allow write: if false;').
+    // 3. All mutations/writes occur solely via the Firebase Admin SDK on the backend server.
+    match /users/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if false;
+
+      match /entries/{entryId} {
+        allow read: if request.auth != null && request.auth.uid == userId;
+        allow write: if false;
+      }
+    }
+  }
+}

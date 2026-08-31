@@ -1,0 +1,6 @@
+{
+  "name": "Manthan",
+  "description": "A private AI reflection journal aligned to UN SDG 3 (Good Health and Well-being, target 3.4), offering supportive, non-clinical reflective journaling with server-authoritative privacy and wellbeing care guardrails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

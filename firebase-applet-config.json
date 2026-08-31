@@ -1,0 +1,12 @@
+{
+  "projectId": "track3-coffee-agent",
+  "appId": "1:300545992116:web:a932ae17d4637283f8fee1",
+  "apiKey": "AIzaSyA5jF_GrIlaipyxyoIyCDK5DK1ZGS_YJo4",
+  "authDomain": "track3-coffee-agent.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-2818998b-6adf-4ba2-b858-6012fe6c47f0",
+  "storageBucket": "track3-coffee-agent.firebasestorage.app",
+  "messagingSenderId": "300545992116",
+  "measurementId": "",
+  "oAuthClientId": "300545992116-me8q1iiudsfqd1081q31s9or5l6n1eqv.apps.googleusercontent.com",
+  "recaptchaSiteKey": ""
+}
