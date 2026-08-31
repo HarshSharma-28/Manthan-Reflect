@@ -5,9 +5,10 @@ import { getAuth, DecodedIdToken } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
 import { GoogleGenAI } from '@google/genai';
 import { CRISIS_RESOURCES } from './src/crisisResources';
+import firebaseConfig from './firebase-applet-config.json';
 
 // Initialize Firebase Admin SDK
-const projectId = process.env.FIREBASE_PROJECT_ID || 'track3-coffee-agent';
+const projectId = process.env.GOOGLE_CLOUD_PROJECT || process.env.GCLOUD_PROJECT || process.env.FIREBASE_PROJECT_ID || firebaseConfig.projectId || 'manthan-ai-507111';
 let adminApp: FirebaseAdminApp;
 
 if (getApps().length === 0) {
